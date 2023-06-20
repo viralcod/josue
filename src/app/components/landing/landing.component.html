@@ -1,0 +1,123 @@
+<div id="inicio">
+  <img src="../../../assets/images/fondo.png" width="100%" class="img-fluid" alt="">
+</div>
+<div class="contenido" id="servicios">
+  <div class="servicios">
+    <div class="text-center d-none d-lg-block d-xl-block">
+      <h1>NUESTROS SERVICIOS</h1>
+      <br><br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card h-100" (click)="openModal('Amarres de Amor')" data-toggle="modal" data-target="#detailService">
+              <div class="card-body">
+                <img src="../../../assets/images/cartas-07.png" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" (click)="openModal('Limpiezas')" data-toggle="modal" data-target="#detailService">
+              <div class="card-body">
+                <img src="../../../assets/images/cartas-10.png" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" (click)="openModal('Recuperar Pareja')" data-toggle="modal" data-target="#detailService">
+              <div class="card-body">
+                <img src="../../../assets/images/cartas-08.png" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container segunda">
+        <div class="row row-cols-3 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card h-100" (click)="openModal('Buena Suerte')" data-toggle="modal" data-target="#detailService">
+              <div class="card-body">
+                <img src="../../../assets/images/cartas-09.png" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" (click)="openModal('Problemas de Dinero')" data-toggle="modal" data-target="#detailService">
+              <div class="card-body">
+                <img src="../../../assets/images/cartas-11.png" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
+      <br>
+      <h1>NUESTROS SERVICIOS</h1>
+      <br><br>
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-6 mb-4">
+             <div class="card h-100" (click)="openModal('Amarres de Amor')" data-toggle="modal" data-target="#detailService">
+                <div class="card-body">
+                  <img src="../../../assets/images/cartas-07.png" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+             <div class="card h-100" (click)="openModal('Limpiezas')" data-toggle="modal" data-target="#detailService">
+                <div class="card-body">
+                  <img src="../../../assets/images/cartas-10.png" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+             <div class="card h-100" (click)="openModal('Recuperar Pareja')" data-toggle="modal" data-target="#detailService">
+                <div class="card-body">
+                  <img src="../../../assets/images/cartas-08.png" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+             <div class="card h-100" (click)="openModal('Buena Suerte')" data-toggle="modal" data-target="#detailService">
+                <div class="card-body">
+                  <img src="../../../assets/images/cartas-09.png" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+             <div class="card h-100" (click)="openModal('Problemas de Dinero')" data-toggle="modal" data-target="#detailService">
+                <div class="card-body">
+                  <img src="../../../assets/images/cartas-11.png" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="detailService" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: #7b7b7b7b;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="background-color: #4c0000;color: #fff;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">{{title | titlecase}}</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+          {{texto}}
+        </h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn-modal"><a href="https://api.whatsapp.com/send?phone=+50372095411"><i class="fab fa-whatsapp fab fa-lg"></i> Contactar</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+

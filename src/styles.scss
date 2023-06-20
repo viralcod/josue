@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+.btn-whatsapp {
+  cursor: pointer;
+  display:block;
+  width:70px;
+  height:70px;
+  color:#fff;
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  border-radius:50%;
+  line-height:80px;
+  text-align:center;
+  z-index:999;
+}
+
+.btn-whatsapp:hover{
+  transform: scale(1.1);
+}
+
+.btn-modal{
+  border: solid;
+  border-color: #fff;
+  background-color: #fff;
+  color: #4c0000;
+  width: 140px;
+  text-align: center;
+  height: 40px;
+  border-radius: 15px;
+}
+.btn-modal:hover{
+  transition: 600ms;
+  transform: scale(1.1);
+}
